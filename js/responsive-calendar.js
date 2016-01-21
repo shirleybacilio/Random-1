@@ -381,19 +381,3 @@
   })(jQuery);
 
 }).call(this);
-
-// área de botones 
-
-
-$(document).onClick(function() {
-  var click= $(this).click();
-  console.log(click);
-
-  if (scroll >= 800) {
-    $('.facetapi-active').addClass(".facetapi-inactive");
-  
-  } else {
-    $('.facetapi-inactive').removeClass(".facetapi-active");
-  
-  }
- });

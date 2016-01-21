@@ -1,5 +1,5 @@
 
-*{
+a {
 	text-decoration: none !important;
 }
 
@@ -291,3 +291,6 @@ section.planificacion.col-md-10.background-white.mt{
 	background-color: none !important;
 }
 
+.site-menu.hidden-sm.hidden-xs{
+	height: 100% !important;
+}
