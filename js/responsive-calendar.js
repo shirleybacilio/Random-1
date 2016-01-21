@@ -381,3 +381,25 @@
   })(jQuery);
 
 }).call(this);
+<<<<<<< HEAD
+=======
+
+// área de botones 
+
+
+
+$(document).ready(function() {
+  $('.user-name').on('click', function() {
+  var click= $(this).click();
+  console.log(click);
+
+  if (scroll >= 800) {
+    $('.facetapi-active').addClass(".facetapi-inactive");
+  
+  } else {
+    $('.facetapi-inactive').removeClass(".facetapi-active");
+  
+  }
+ });
+});
+>>>>>>> 6cdd2e86bc46c119f7bcd88b5fd780d48e264449
