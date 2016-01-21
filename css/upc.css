@@ -152,7 +152,7 @@ h2.blue{
 }
 #top h1{
   font-family: 'sgothic-bdcap';
-    display: initial;
+    display: inline;
     color: #000;
 }
 .azul{
