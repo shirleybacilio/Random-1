@@ -114,6 +114,11 @@ ul.list-unstyled.nav-main li a{
 	margin-right: 3%;
 }
 
+.btn-guardar span{
+	display: block;
+	font-family: 'sgothic-bdcap';
+}
+
 
 /*PLANIFICACIÓN DE ENCUESTAS -utilities*/
 .planificacion{

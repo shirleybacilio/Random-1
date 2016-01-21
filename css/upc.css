@@ -1684,6 +1684,14 @@ a.icon img{
     padding: 4px;}
 .datepicker table{width: 345px;}
 /*IE AVATAR*/
+.ie-avatar{
+  background: url('../img/img-user-1.png');
+
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 77px;
+    height: 77px;
+}
 .dropdown-toggle.relative #ie-avatar {
     width: 89px !important;
 }
