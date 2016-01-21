@@ -1,0 +1,293 @@
+
+*{
+	text-decoration: none !important;
+}
+
+/*barra lateral azul*/
+.bg-blue{
+	background: #3399ff;
+}
+
+.title-font{
+	font-family: 'sgothic-bdcap'; 
+}
+
+.aside-blue{
+	color: #fff;
+} 
+@import url("http://recursosinvestigacion.upc.edu.pe/sites/default/themes/bootstrap_barrio/css/style.css?nzey8u");
+
+.nav-main > li.active-menu.mis-estudios a div {
+	background-image: url(../iconos/m-home.png); 
+}
+.nav-main > li.current-menu.mis-estudios a div {
+	background-image: url(http://mi.upc.edu.pe/assets/img/mis_estudios_red.png); 
+}
+.nav-main > li.mis-estudios a div {
+	background-image: url('../iconos/m-home.png'); 
+}
+.nav-main > li.mis-estudios a div:hover{
+	background-image: url('../iconos/m-home-1.png');
+} 
+.nav-main > li.active-menu.mis-tramites a div {
+	background-image: url('http://mi.upc.edu.pe/assets/img/mis_tramites_red.png'); 
+}
+.nav-main > li.current-menu.mis-tramites a div {
+	background-image: url(http://mi.upc.edu.pe/assets/img/mis_tramites_red.png); 
+}
+.nav-main > li.mis-tramites a div {
+	background-image: url('../iconos/icon-encuestas.png'); 
+}
+.nav-main > li.mis-tramites a div:hover {
+	background-image: url('../iconos/icon-encuestas-1.png'); 
+}
+.nav-main > li.active-menu.mis-finanzas a div {
+	background-image: url(http://mi.upc.edu.pe/assets/img/mis_finanzas_red.png); 
+}
+.nav-main > li.current-menu.mis-finanzas a div {
+	background-image: url(http://mi.upc.edu.pe/assets/img/mis_finanzas_red.png); 
+}
+.nav-main > li.mis-finanzas a div {
+	background-image: url('../iconos/icon-reportes.png'); 
+}
+.nav-main > li.mis-finanzas a div:hover {
+	background-image: url('../iconos/icon-reportes-1.png'); 
+}
+
+.nav-main > li.active-menu.mis-reservas a div {
+	background-image: url(http://mi.upc.edu.pe/assets/img/mis_reservas_red.png); 
+}
+.nav-main > li.current-menu.mis-reservas a div {
+	background-image: url(http://mi.upc.edu.pe/assets/img/mis_reservas_red.png); 
+}
+.nav-main > li.mis-reservas a div {
+	background-image: url('../iconos/icon-administracion.png'); 
+}
+
+.nav-main > li.mis-reservas a div:hover {
+	background-image: url('../iconos/icon-administracion-1.png'); 
+}
+.nav-main > li.active-menu.mis-reservas-docentes a div {
+	background-image: url(http://mi.upc.edu.pe/assets/img/mis_reservas_red.png); 
+}
+.nav-main > li.current-menu.mis-reservas-docentes a div {
+	background-image: url(http://mi.upc.edu.pe/assets/img/mis_reservas_red.png); 
+}
+.nav-main > li.mis-reservas-docentes a div {
+	background-image: url(http://mi.upc.edu.pe/assets/img/mis_reservas_grey.png); 
+}
+
+
+.site-menu{
+	background: #0072B6 !important;
+	border: 1px solid #0072B6 !important;
+	color: #fff;
+	z-index: 99;
+}
+.site-menu span{
+	color: #ddd !important;
+}
+.site-menu span:hover{
+	color: #000 !important;
+}
+.site-menu.hidden-sm.hidden-xs{
+	z-index: 99;
+	margin-top: 39px;
+	padding-top: 0px;
+}
+ul.list-unstyled.nav-main li a{
+	padding: 10px 0 10px;
+}
+.site-menu li:hover{
+	background: #fff !important;
+}
+.site-menu li{
+	background: #0072B6 !important;
+	border: 1px solid #0072B6 !important;
+}
+
+.grey-border{
+	border: 1px solid #ddd;
+	padding: 1%;
+	margin-right: 3%;
+}
+
+
+/*PLANIFICACIÓN DE ENCUESTAS -utilities*/
+.planificacion{
+	
+}
+.planificacion h2{
+	color: #000  !important;
+}
+.bg-grey{
+	background: #EBEBEC;
+}
+.pd-1{
+	padding: 1% !important;
+}
+.pd-3{
+	padding: 3% !important;
+}
+.pb-3{
+	padding-bottom: 3% !important;
+}
+.mt-5{
+	margin-top: 5% !important;
+}
+.m-1{
+	margin: 1% !important;
+}
+
+.mb-5{
+	margin-bottom: 5% !important;
+}
+
+section.planificacion.col-md-10.background-white.mt{
+	padding-bottom: 3%;
+}
+
+.opciones-filtros-2{width: 100%; overflow: hidden; font-size: 10px;}
+
+
+
+/*botones de aceptacion y cancelación*/
+
+.red-button, .green-button, .blue-button{
+  display: inline;
+  color: #fff;
+  cursor: pointer;
+}
+.red-button{
+  background: #E42322;
+  padding:25% 54% 24% 22%;
+  border-radius: 100%;
+  margin: 1%;
+}
+.red-button:hover{
+  background: #cd1f1e;
+}
+.green-button{
+  background: #65C05E;
+  padding: 25% 54% 24% 22%;
+  border-radius: 100%;
+  margin: 1%;
+}
+.green-button:hover{
+  background: #5aac54;
+}
+.blue-button{
+  background: #3399FF;
+  padding:24% 55% 22% 26%;
+  border-radius: 100%;
+  margin: 2%;
+}
+.blue-button:hover{
+  background: #1a8cff;
+}
+.ok-cancel{
+  margin: 1.05% 4%;
+  text-align: center;
+}
+.ok-cancel p{
+  font-family: 'sgothic-bdcap';
+  font-weight: bold;
+}
+.boton-subir {
+
+	width: 100%;
+    background: #3399FF;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+.boton-subir p{
+	 text-align: center;
+     color: #fff;
+     padding: 3%;
+}
+
+
+/*NO PROGRAMADOS*/
+
+.dsp-in{
+	display: inline-block;
+}
+.activos:active{
+	border-bottom: 3px solid #3399FF !important; 
+	display: inline; 
+}
+
+.small-font-size-noprogramados{
+	font-size: 11px;
+}
+.small-font-size-noprogramados option{
+	font-size: 10px;
+}
+/*PROGRAMACIÓN ENCUESTA*/
+
+.cargar-contenido{
+	padding: 7% 16%;
+}
+.boton-purple {
+	background: #7D5B9E;
+	border-radius: 100%;
+	padding: 12%;
+    width: 30px;
+    height: 29px;
+
+}
+.boton-purple span{
+	color: #fff;
+}
+
+/*carga error*/
+
+
+.search-image-2{
+    background: url("../iconos/m-busqueda.png") no-repeat left;
+    border: medium none;
+    border-radius: 0 0 0 0;
+    box-shadow: none;
+    color: #484848;
+    font: bold 12px;
+    font-family: 'zizou-slab-light';
+    height: 32px;
+    padding: 4px 26px 4px 6px;
+}
+.error{
+	padding: 3%;
+	margin: 1%;
+}
+.error p{
+	padding:1%;
+	font-weight: bold;
+}
+.ok{
+	padding: 3%;
+	margin: 1%;
+}
+
+.ok p{
+	padding:1%;
+	font-weight: bold;
+	color: #3399FF !important;
+}
+.red-border{
+	border-bottom: 2px solid red;
+	font-family: 'sgothic-bdcap';
+}
+.boton-continuar {
+	float: right;
+	font-family: 'sgothic-bdcap';
+	text-align: center;
+	padding: 2%;
+}
+.botones-carga{
+	font-family: 'sgothic-bdcap';
+
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus{
+	background-color: none !important;
+}
+

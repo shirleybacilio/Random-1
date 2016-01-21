@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <!-- Apple Mobile -->
+  <meta name="apple-mobile-web-app-title" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
+  <meta itemprop="contentRating" content="General" />
+  <meta name="robots" content="All" />
+  <meta name="revisit-after" content="7 days"/>
+  <meta name="description" content="The source of truly unique and awesome jquery plugins." />
+  <meta name="keywords" content="slider, carousel, responsive, swipe, one to one movement, touch devices, jquery, plugin, bootstrap compatible, html5, css3" />
+  <meta name="author" content="w3widgets.com">
+  <title>Sistema de encuestas</title>
+  <link href="css/upc.css"rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet"> 
+  <link href="fonts/fuentes.css" rel="stylesheet">
+  <link href="css/bootstrap-responsive.min.css"rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://s3-sa-east-1.amazonaws.com/webfontsupc/fuentes.css" />
+  <!-- FAVICON -->
+  <link  href="images/favicon.ico" rel="shortcut icon" />
+  <!-- Apple icons -->
+  <link href="js/jquery.min.js" rel="stylesheet"> 
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+  <!-- print -->
+  <link rel="stylesheet" href="http://mi.upc.edu.pe/stylesheets/main_print.css" media="print">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <!-- Respomsive calendar -->
+  <link href="css/responsive-calendar.css" rel="stylesheet">
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <!-- Apple icons -->
+  <link rel="stylesheet" type="text/css" href="js/jquery.min.js">
+  <link href="css/upc.css" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="http://mi.upc.edu.pe/stylesheets/main.min.css">
+  <!-- print -->
+  <link rel="stylesheet" href="http://mi.upc.edu.pe/stylesheets/main_print.css" media="print">
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Flexslider -->
+    <script src="http://mi.upc.edu.pe/js/app/vendor/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(window).load(function() {$('.flexslider').flexslider();});
+    </script>
+    <script src="//use.typekit.net/atd7fhw.js"></script>
+</head>    
+<body class="html not-front logged-in one-sidebar sidebar-first page-recursos i18n-es">
+
+  <form method="post" action="./inicio" id="form1" accept-charset="UTF-8">
+    <div class="aspNetHidden">
+      <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="980642AA" />
+      <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAIDWCsivmvrWiCXnn0k9nezZ2GL3+Pm1IHBqK0mbJ4My0IHdwHSEt4krg0pGJipDHGL2CKHLK+g3CG1Ta4aIzmn" />
+    </div>
+    <!--Navegadores-->
+    <div id="navbar-main">
+      <header role="banner" class="header-top">
+        <div id="top" class="container">
+          <div class="logo"> 
+            <a href="#" title="Inicio">
+              <img src="http://recursosinvestigacion.upc.edu.pe/sites/default/files/logo-upc-v1.png" alt="Inicio" />
+              <h1>sistema de encuestas</h1>
+            </a>
+          </div>
+          <ul class="menu nav navbar-nav secondary">
+            <li class="first leaf dhtml-menu" id="dhtml_menu-2"><a href="/user">Mi cuenta</a></li>
+            <li class="last leaf dhtml-menu" id="dhtml_menu-18"><a href="/user/logout">Cerrar sesión</a></li> 
+          </ul>      
+          <div class="region region-top">
+            <section id="block-menu-menu-menu-top" class="block block-menu">
+             <div class="block-content">
+              <ul class="menu nav" >
+               <li class="first leaf dhtml-menu" id="dhtml_menu-735">
+                <a href="http://www.upc.edu.pe" target="_blank" >PORTAL</a>
+              </li>
+              <li class="leaf dhtml-menu" id="dhtml_menu-736">
+                <a href="http://www.upc.edu.pe/" target="_blank" >SERVICIOS</a>
+              </li>
+              <li class="last leaf dhtml-menu" id="dhtml_menu-737">
+                <a href="http://blogs.upc.edu.pe/ci/" target="_blank" >Blog</a>
+              </li>
+            </ul>
+          </div>
+        </section> <!-- /.block -->
+      </div>
+    </div>
+  </header>
+  <header id="navbar" class="navbar navbar-default" role="banner">
+    <div class="navbar-inner">
+     <div id="main-navs">
+       <div class="container">
+        <div id="header" class="header row">
+          <div class="custom-search">
+            <section id="block-df-custom-custom-buscador-movil" class="block block-df-custom">
+              <div class="block-content">
+                <div class="" id="custom-buscador">
+                  <div class="form-type-textfield form-item-term-to-search form-item form-group">
+                    <input placeholder="Buscar" class="form-control form-text" type="text" id="edit-term-to-search" name="term_to_search" value="" size="15" maxlength="128" />
+                  </div>
+                  <div id="edit-from" class="form-type-item form-item form-group">
+                    <div class="search-image"></div>
+                  </div>
+                  
+                </div>      
+              </div>
+            </section> <!-- /.block -->
+          </div>
+         <div id="main-nav" class="collapse navbar-collapse">
+                <nav role="navigation">
+                  <div class="region region-navigation">
+                    <section id="block-block-1" class="block block-block">
+                      <div class="block-content">
+                        <div class="ic-inicio">
+                          <a href="/taxonomy/term/"><img src="/sites/default/files/ico-house.png" alt="Inicio"></a>
+                        </div>
+                      </div>
+                    </section> <!-- /.block -->
+                    <div class="col-sm-3 pull-right">
+                      <div class="text-center pull-left pt-28 pr-21">
+                        <span class="text-muted zizou-16 hidden-sm">
+                         Hola                            
+                         Julio Cesar</span>
+                       </div>
+                       <div class="dropdown pull-left avatar">
+                        <div class="dropdown-toggle relative" id="dropdownMenu1" data-toggle="dropdown">
+                          <div id="ie-avatar"></div> 
+                        </div>
+                        <ul class="dropdown-menu" role="menu">
+                          <li role="presentation"><a id="lnk_int_MisDatos" role="menuitem" tabindex="-1" href="http://mi.upc.edu.pe/perfil">Mis Datos</a></li>
+                          <li  role="presentation" class="divider"></li>
+                          <li role="presentation"><a id="lnk_int_VerTutorial" role="menuitem" tabindex="-1" data-toggle="modal" data-target="#myModal">Ver Tutorial</a></li>
+                          <li role="presentation" class="divider"></li>
+                          <li  role="presentation"><a id="lnk_int_CerrarSesion" role="menuitem" tabindex="-1" href="http://mi.upc.edu.pe/login/salir">Cerrar Sesión</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</header>
+<div class="main-container">
+  <div class="container">
+    <header role="banner" id="page-header"></header> <!-- /#header -->
+    <div class="row">
+      <div class="site-menu hidden-sm hidden-xs">
+        <ul class="list-unstyled nav-main">
+          <li class="mis-estudios menu sidebar-item"> 
+            <a id="lnk_int_Mis Estudios" href="">
+              <div></div>
+              <span>inicio</span>
+            </a>
+          </li>
+          <li class="mis-tramites menu sidebar-item"> 
+            <a id="lnk_int_Mis Trámites" href="#">
+              <div></div>
+              <span>encuestas</span>
+            </a>
+          </li>
+          <li class="mis-finanzas menu sidebar-item"> 
+            <a id="lnk_int_Mis Finanzas" href="#">
+              <div></div>
+              <span>reportes</span>
+            </a>
+          </li>
+          <li class="mis-reservas menu sidebar-item"> 
+            <a id="lnk_int_Mis Reservas" href="#">
+              <div></div>
+              <span>administración</span>
+            </a>  
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="col-md-1"></div>
+  <div class="col-md-11">
+   <section class="planificacion col-md-11-5 background-white mt-21 mb-35">
+    <br>
+    <div class="caja">
+      <h2>programación de encuestas especiales</h2>
+    </div>
+    <br>       
+    <div class="container">
+      <div class="row">
+       <div class="col-sm-6 col-xs-12 pb-35">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <b>Tipo de cuestionario</b>
+            </div>
+            <div class="col-sm-6">
+              <div class="opciones-filtros-2">
+                <div class="filter-opciones">
+                  <select class="form-control form-select" col="100">
+                    <option  class="ordenar"></option>
+                    <option class="recientes">1</option>
+                    <option class="visto">2</option>
+                    <option class="alfa">3</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-xs-12 pb-35">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <b>Fecha</b>
+            </div>
+            <div class="col-sm-6">
+              <div class="opciones-filtros-2">
+                <div class="filter-opciones">
+                  <select class="form-control form-select" col="100">
+                    <option  class="ordenar"></option>
+                    <option class="recientes">1</option>
+                    <option class="visto">2</option>
+                    <option class="alfa">3</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-xs-12 pb-35">
+       <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <b>Nombre del curso</b>
+          </div>
+          <div class="col-sm-6">
+            <div class="opciones-filtros-2">
+              <div class="filter-opciones">
+                <select class="form-control form-select" col="100">
+                  <option  class="ordenar"></option>
+                  <option class="recientes">1</option>
+                  <option class="visto">2</option>
+                  <option class="alfa">3</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-xs-12 pb-35">
+     <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <b>Hora de inicio</b>
+        </div>
+        <div class="col-sm-6">
+          <div class="opciones-filtros-2">
+            <div class="filter-opciones">
+              <select class="form-control form-select" col="100">
+                <option  class="ordenar"></option>
+                <option class="recientes">1</option>
+                <option class="visto">2</option>
+                <option class="alfa">3</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6 col-xs-12 pb-35">
+   <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <b>Nombre de la encuesta</b>
+      </div>
+      <div class="col-sm-6">
+        <div class="opciones-filtros-2">
+          <div class="filter-opciones">
+            <select class="form-control form-select" col="100">
+              <option  class="ordenar"></option>
+              <option class="recientes">1</option>
+              <option class="visto">2</option>
+              <option class="alfa">3</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-sm-6 col-xs-12 pb-35">
+ <div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <b>Hora final</b>
+    </div>
+    <div class="col-sm-6">
+      <div class="opciones-filtros-2">
+        <div class="filter-opciones">
+          <select class="form-control form-select" col="100">
+            <option  class="ordenar"></option>
+            <option class="recientes">1</option>
+            <option class="visto">2</option>
+            <option class="alfa">3</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="row">
+  <div class="col-sm-6 col-xs-12 pb-35">
+   <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <b>Programa</b>
+      </div>
+      <div class="col-sm-6">
+        <div class="opciones-filtros-2">
+          <div class="filter-opciones">
+            <select class="form-control form-select" col="100">
+              <option  class="ordenar"></option>
+              <option class="recientes">1</option>
+              <option class="visto">2</option>
+              <option class="alfa">3</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>         
+<div class="blue-line"></div>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="panel-body text-center">
+      <div class="panel-body-head-table">
+        <ul class="tr  table-border list-unstyled  row header-blue">
+          <li class="col-sm-1-5">
+            <div>
+              <span ><b>cuestionario</b></span>
+            </div>
+          </li>
+          <li class="col-sm-1-5">
+            <div>
+              <span><b>Curso</b></span>
+            </div>
+          </li>
+          <li class="col-sm-1-5">
+            <div>
+              <span><b>programa</b></span>
+            </div>
+          </li>
+          <li class="col-sm-1">
+           <div>
+             <span><b>fecha</b></span>
+           </div> 
+         </li>
+         <li class="col-sm-1">
+           <div>
+             <span><b>horario inicial</b></span>
+           </div> 
+         </li>
+         <li class="col-sm-1-5">
+           <div>
+             <span><b>horario final</b></span>
+           </div> 
+         </li>
+         <li class="col-sm-1">
+           <div>
+             <span><b>carga manual</b></span>
+           </div> 
+         </li>
+         <li class="col-sm-1">
+           <div>
+             <span><b>subir archivo cm</b></span>
+           </div> 
+         </li>
+         <li class="col-sm-1">
+           <div>
+             <span><b>categoria automática</b></span>
+           </div> 
+         </li>
+       </ul>
+     </div>
+     <div class="panel-table">
+      <div class="panel-body-head-table small-font-size-noprogramados">
+        <ul class="tr table-border list-unstyled  row line-down">
+          <li class="col-sm-1-5">
+            <div>
+              <div class="opciones-filtros-2">
+                <div class="filter-opciones">
+                  <select class="form-control form-select" col="100">
+                    <option  class="ordenar"><span>Cuestionario Online</span></option>
+                    <option class="recientes">1</option>
+                    <option class="visto">2</option>
+                    <option class="alfa">3</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="col-sm-1-5">
+            <div>
+              <div class="opciones-filtros-2">
+                <div class="filter-opciones">
+                  <select class="form-control form-select" col="100">
+                    <option  class="ordenar"><span>Física II</span></option>
+                    <option class="recientes">1</option>
+                    <option class="visto">2</option>
+                    <option class="alfa">3</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="col-sm-1-5">
+            <div>
+             <div class="opciones-filtros-2">
+              <div class="filter-opciones">
+                <select class="form-control form-select" col="100">
+                  <option  class="ordenar"><span>Cuestionario Online</span></option>
+                  <option class="recientes">1</option>
+                  <option class="visto">2</option>
+                  <option class="alfa">3</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="col-sm-1">
+         <div>
+           <span>11/10/2016</span>
+         </div> 
+       </li>
+       <li class="col-sm-1">
+        <div>
+          <span>19:00</span>
+        </div>
+      </li>
+      <li class="col-sm-1-5">
+        <div>
+          <span>22:00</span>
+        </div>
+      </li>
+      <li class="col-sm-1 border-purple-1">
+        <a rel="nofollow" href="#" class="facetapi-checkbox facetapi-active">
+          <div id="facetapi-link--2" >
+          </div>
+        </a>
+      </li>
+      <li class="col-sm-1 border-purple-1">
+        <div class="boton-purple">
+          <a href="#">
+        <span><i class="glyphicon glyphicon-ok"></i></span>
+      </a>
+        </div>
+      </li>
+      <li class="col-sm-1 ">
+        <a rel="nofollow" href="#" class="facetapi-checkbox facetapi-inactive">
+          <div id="facetapi-link--2" >
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="panel-table ">
+  <div class="panel-body-head-table small-font-size-noprogramados">
+    <ul class="tr table-border list-unstyled  row line-down">
+      <li class="col-sm-1-5">
+        <div>
+          <div class="opciones-filtros-2">
+            <div class="filter-opciones">
+              <select class="form-control form-select" col="100">
+                <option  class="ordenar"><span>Cuestionario Online</span></option>
+                <option class="recientes">1</option>
+                <option class="visto">2</option>
+                <option class="alfa">3</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="col-sm-1-5">
+        <div>
+          <div class="opciones-filtros-2">
+            <div class="filter-opciones">
+              <select class="form-control form-select" col="100">
+                <option  class="ordenar"><span>Física II</span></option>
+                <option class="recientes">1</option>
+                <option class="visto">2</option>
+                <option class="alfa">3</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="col-sm-1-5">
+        <div>
+         <div class="opciones-filtros-2">
+          <div class="filter-opciones">
+            <select class="form-control form-select" col="100">
+              <option  class="ordenar"><span>Cuestionario Online</span></option>
+              <option class="recientes">1</option>
+              <option class="visto">2</option>
+              <option class="alfa">3</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="col-sm-1">
+     <div>
+       <span>11/10/2016</span>
+     </div> 
+   </li>
+   <li class="col-sm-1">
+    <div>
+      <span>19:00</span>
+    </div>
+  </li>
+  <li class="col-sm-1-5">
+    <div>
+      <span>22:00</span>
+    </div>
+  </li>
+  <li class="col-sm-1 border-purple-1">
+    <a rel="nofollow" href="#" class="facetapi-checkbox facetapi-active">
+      <div id="facetapi-link--2" >
+      </div>
+    </a>
+  </li>
+  <li class="col-sm-1 border-purple-2">
+    <div class="boton-purple">
+      <a href="#">
+        <span><i class="glyphicon glyphicon-ok"></i></span>
+      </a>
+    </div>
+  </li>
+  <li class="col-sm-1">
+
+    <a rel="nofollow" href="#" class="facetapi-checkbox facetapi-inactive">
+      <div id="facetapi-link--2" >
+      </div>
+    </a>
+  </li>
+</ul>
+</div>
+</div>
+<div class="panel-table ">
+  <div class="panel-body-head-table small-font-size-noprogramados">
+    <ul class="tr table-border list-unstyled  row line-down">
+      <li class="col-sm-1-5">
+        <div>
+          <div class="opciones-filtros-2">
+            <div class="filter-opciones">
+              <select class="form-control form-select" col="100">
+                <option  class="ordenar"><span>Cuestionario Online</span></option>
+                <option class="recientes">1</option>
+                <option class="visto">2</option>
+                <option class="alfa">3</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="col-sm-1-5">
+        <div>
+          <div class="opciones-filtros-2">
+            <div class="filter-opciones">
+              <select class="form-control form-select" col="100">
+                <option  class="ordenar"><span>Física II</span></option>
+                <option class="recientes">1</option>
+                <option class="visto">2</option>
+                <option class="alfa">3</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="col-sm-1-5">
+        <div>
+         <div class="opciones-filtros-2">
+          <div class="filter-opciones">
+            <select class="form-control form-select" col="100">
+              <option  class="ordenar"><span>Cuestionario Online</span></option>
+              <option class="recientes">1</option>
+              <option class="visto">2</option>
+              <option class="alfa">3</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="col-sm-1">
+     <div>
+       <span>11/10/2016</span>
+     </div> 
+   </li>
+   <li class="col-sm-1">
+    <div>
+      <span>19:00</span>
+    </div>
+  </li>
+  <li class="col-sm-1-5">
+    <div>
+      <span>22:00</span>
+    </div>
+  </li>
+  <li class="col-sm-1">
+    <a rel="nofollow" href="#" class="facetapi-checkbox facetapi-active">
+      <div id="facetapi-link--2" >
+      </div>
+    </a>
+  </li>
+  <li class="col-sm-1">
+    <div class="boton-purple">
+      <a href="#">
+        <span><i class="glyphicon glyphicon-ok"></i></span>
+      </a>
+    </div>
+  </li>
+  <li class="col-sm-1">
+    <a rel="nofollow" href="#" class="facetapi-checkbox facetapi-inactive">
+      <div id="facetapi-link--2" >
+      </div>
+    </a>
+  </li>
+</ul>
+</div>
+</div>
+<div class="panel-table ">
+  <div class="panel-body-head-table small-font-size-noprogramados">
+    <ul class="tr table-border list-unstyled  row line-down">
+      <li class="col-sm-1-5">
+        <div>
+          <div class="opciones-filtros-2">
+            <div class="filter-opciones">
+              <select class="form-control form-select" col="100">
+                <option  class="ordenar"><span>Cuestionario Online</span></option>
+                <option class="recientes">1</option>
+                <option class="visto">2</option>
+                <option class="alfa">3</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="col-sm-1-5">
+        <div>
+          <div class="opciones-filtros-2">
+            <div class="filter-opciones">
+              <select class="form-control form-select" col="100">
+                <option  class="ordenar"><span>Física II</span></option>
+                <option class="recientes">1</option>
+                <option class="visto">2</option>
+                <option class="alfa">3</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="col-sm-1-5">
+        <div>
+         <div class="opciones-filtros-2">
+          <div class="filter-opciones">
+            <select class="form-control form-select" col="100">
+              <option  class="ordenar"><span>Cuestionario Online</span></option>
+              <option class="recientes">1</option>
+              <option class="visto">2</option>
+              <option class="alfa">3</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="col-sm-1">
+     <div>
+       <span>11/10/2016</span>
+     </div> 
+   </li>
+   <li class="col-sm-1">
+    <div>
+      <span>19:00</span>
+    </div>
+  </li>
+  <li class="col-sm-1-5">
+    <div>
+      <span>22:00</span>
+    </div>
+  </li>
+  <li class="col-sm-1">
+    <a rel="nofollow" href="#" class="facetapi-checkbox facetapi-active">
+      <div id="facetapi-link--2" >
+      </div>
+    </a>
+  </li>
+  <li class="col-sm-1">
+    <div class="boton-purple">
+      <a href="#">
+        <span><i class="glyphicon glyphicon-ok"></i></span>
+      </a>
+    </div>
+  </li>
+  <li class="col-sm-1">
+    <a rel="nofollow" href="#" class="facetapi-checkbox facetapi-inactive">
+      <div id="facetapi-link--2" >
+      </div>
+    </a>
+  </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div> 
+<div class="row mb-35">
+  <div class="ok-cancel pull-right">
+    <div class="col-sm-6">
+      <a href="#"><img src="iconos/btn-guardar.png"></a>
+      <p>actualizar</p>
+    </div>
+    <div class="col-sm-6">
+      <a href="#"><img src="iconos/btn-actualizar.png"></a>
+      <p>guardar</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+  <script src="js/jquery.js"></script>
+  <script src="http://mi.upc.edu.pe/js/b3/dropdown.js"></script>
+    <script src="js/responsive-calendar.js"></script>
+    <script src="http://mi.upc.edu.pe/js/app/vendor/jquery.validate.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".responsive-calendar").responsiveCalendar({
+          time: '2016-01',
+          events: {
+            "2016-01-19": {"number": 1, "url": "#"},
+            "2016-01-20": {"number": 1, "url": "#"}, 
+            "2016-01-21":{"number": 1},
+            "2016-01-22":{"number": 1},
+            "2016-01-23":{"number": 1}, 
+            "2016-06-12": {}}
+        });
+      });
+    </script>
+</body>
+</html>

@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+   <!-- Apple Mobile -->
+  <meta name="apple-mobile-web-app-title" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
+  <meta itemprop="contentRating" content="General" />
+  <meta name="robots" content="All" />
+  <meta name="revisit-after" content="7 days"/>
+  <meta name="description" content="The source of truly unique and awesome jquery plugins." />
+  <meta name="keywords" content="slider, carousel, responsive, swipe, one to one movement, touch devices, jquery, plugin, bootstrap compatible, html5, css3" />
+  <meta name="author" content="w3widgets.com">
+  <title>Sistema de encuestas</title>
+  <link href="css/upc.css"rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet"> 
+  <link href="fonts/fuentes.css" rel="stylesheet">
+  <link href="css/bootstrap-responsive.min.css"rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://s3-sa-east-1.amazonaws.com/webfontsupc/fuentes.css" />
+  <!-- FAVICON -->
+  <link  href="images/favicon.ico" rel="shortcut icon" />
+  <!-- Apple icons -->
+  <link href="js/jquery.min.js" rel="stylesheet"> 
+   <!-- Bootstrap -->
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+  <!-- print -->
+  <link rel="stylesheet" href="http://mi.upc.edu.pe/stylesheets/main_print.css" media="print">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <!-- Respomsive calendar -->
+  <link href="css/responsive-calendar.css" rel="stylesheet">
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <!-- Apple icons -->
+  <link rel="stylesheet" type="text/css" href="js/jquery.min.js">
+  <link href="css/upc.css" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="http://mi.upc.edu.pe/stylesheets/main.min.css">
+  <!-- print -->
+  <link rel="stylesheet" href="http://mi.upc.edu.pe/stylesheets/main_print.css" media="print">
+  <!--[if lt IE 9]>
+    <script src="//use.typekit.net/dbm5wbg.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    <script src="http://mi.upc.edu.pe/js/app/vendor/html5shiv.js"></script>
+    <script src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
+    <script src="//html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js"></script>
+    <script src="http://mi.upc.edu.pe/js/app/vendor/respond.min.js"></script>
+    <script src="http://mi.upc.edu.pe/js/app/vendor/placeholders.min.js"></script>
+    <![endif]-->
+
+    <!-- SCRIPTS -->
+    
+    <!-- SCRIPTS -->
+    <!-- jquery 1.11.1 -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Flexslider -->
+    <script src="modernizr-latest.js"></script>
+    <script src="http://mi.upc.edu.pe/js/app/vendor/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(window).load(function() {$('.flexslider').flexslider();});
+    </script>
+    <script src="//use.typekit.net/atd7fhw.js"></script>
+</head>    
+  <body class="html not-front logged-in one-sidebar sidebar-first page-recursos i18n-es">
+   
+    <form method="post" action="./inicio" id="form1" accept-charset="UTF-8">
+      <div class="aspNetHidden">
+        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="980642AA" />
+        <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAIDWCsivmvrWiCXnn0k9nezZ2GL3+Pm1IHBqK0mbJ4My0IHdwHSEt4krg0pGJipDHGL2CKHLK+g3CG1Ta4aIzmn" />
+      </div>
+      <!--Navegadores-->
+      <div id="navbar-main">
+        <header role="banner" class="header-top">
+          <div id="top" class="container">
+            <div class="logo"> 
+                <a href="#" title="Inicio">
+                  <img src="http://recursosinvestigacion.upc.edu.pe/sites/default/files/logo-upc-v1.png" alt="Inicio" />
+                  <h1>sistema de encuestas</h1>
+                </a>
+              </div>
+              <ul class="menu nav navbar-nav secondary">
+                <li class="first leaf dhtml-menu" id="dhtml_menu-2"><a href="/user">Mi cuenta</a></li>
+                <li class="last leaf dhtml-menu" id="dhtml_menu-18"><a href="/user/logout">Cerrar sesión</a></li> 
+              </ul>      
+              <div class="region region-top">
+                <section id="block-menu-menu-menu-top" class="block block-menu">
+                 <div class="block-content">
+                    <ul class="menu nav" >
+                       <li class="first leaf dhtml-menu" id="dhtml_menu-735">
+                        <a href="http://www.upc.edu.pe" target="_blank" >PORTAL</a>
+                      </li>
+                      <li class="leaf dhtml-menu" id="dhtml_menu-736">
+                        <a href="http://www.upc.edu.pe/" target="_blank" >SERVICIOS</a>
+                      </li>
+                      <li class="last leaf dhtml-menu" id="dhtml_menu-737">
+                        <a href="http://blogs.upc.edu.pe/ci/" target="_blank" >Blog</a>
+                      </li>
+                    </ul>
+                  </div>
+                </section> <!-- /.block -->
+              </div>
+            </div>
+        </header>
+
+        <header id="navbar" class="navbar navbar-default" role="banner">
+          <div class="navbar-inner">
+           <div id="main-navs">
+             <div class="container">
+               <div class="navbar-header">
+                <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+                <button type="button" class="navbar-toggle headermenu" data-toggle="collapse" data-target="#main-nav">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <div id="header" class="header row">
+                <div class="custom-search">
+                  <section id="block-df-custom-custom-buscador-movil" class="block block-df-custom">
+                    <div class="block-content">
+                      <div class="" id="custom-buscador">
+                        <div class="form-type-textfield form-item-term-to-search form-item form-group">
+                          <input placeholder="Buscar" class="form-control form-text" type="text" id="edit-term-to-search" name="term_to_search" value="" size="15" maxlength="128" />
+                        </div>
+                        <div id="edit-from" class="form-type-item form-item form-group">
+                          <div class="search-image"></div>
+                        </div>
+                        <button class="btn btn-default form-submit" id="edit-submit" name="op" value="" type="submit"></button>
+                      </div>      
+                    </div>
+                  </section> <!-- /.block -->
+                </div>
+               <div id="main-nav" class="collapse navbar-collapse">
+                <nav role="navigation">
+                  <div class="region region-navigation">
+                    <section id="block-block-1" class="block block-block">
+                      <div class="block-content">
+                        <div class="ic-inicio">
+                          <a href="/taxonomy/term/"><img src="/sites/default/files/ico-house.png" alt="Inicio"></a>
+                        </div>
+                      </div>
+                    </section> <!-- /.block -->
+                    <div class="col-sm-3 pull-right">
+                      <div class="text-center pull-left pt-28 pr-21">
+                        <span class="text-muted zizou-16 hidden-sm">
+                         Hola                            
+                         Julio Cesar</span>
+                       </div>
+                       <div class="dropdown pull-left avatar">
+                        <div class="dropdown-toggle relative" id="dropdownMenu1" data-toggle="dropdown">
+                          <div id="ie-avatar"></div> 
+                        </div>
+                        <ul class="dropdown-menu" role="menu">
+                          <li role="presentation"><a id="lnk_int_MisDatos" role="menuitem" tabindex="-1" href="http://mi.upc.edu.pe/perfil">Mis Datos</a></li>
+                          <li  role="presentation" class="divider"></li>
+                          <li role="presentation"><a id="lnk_int_VerTutorial" role="menuitem" tabindex="-1" data-toggle="modal" data-target="#myModal">Ver Tutorial</a></li>
+                          <li role="presentation" class="divider"></li>
+                          <li  role="presentation"><a id="lnk_int_CerrarSesion" role="menuitem" tabindex="-1" href="http://mi.upc.edu.pe/login/salir">Cerrar Sesión</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </header>
+        <div class="main-container">
+         <div id="mobile-nav" class="hidden-md hidden-lg container-fluid p-0">
+  <div class="white-header col-xs-12">
+    <img src="http://mi.upc.edu.pe/assets/img/isotipo_upc.png" class="pt-7 pull-left">  
+    <span class="solano-bold-28 pull-left pt-7 pl-7 uppercase">Mi UPC</span>
+   </div>
+
+  <div class="col-xs-12">
+    <div class="col-sm-0-5 col-xs-0-5"></div>
+    <div class="col-sm-11 col-xs-12 blue-menu p-0 pl-35">
+      <div class="col-sm-2 col-xs-2 text-center blue-menu-option pt-7 pl-0 pb-7">
+        <a id="lnk_ext_Correo" class="text-muted" href="https://www.outlook.com/upc.edu.pe" target="_blank">
+            <img src="http://mi.upc.edu.pe//assets/img/white_mail.png" class="block" alt="">
+        </a>
+      </div>
+      <div class="col-sm-3 col-xs-3 text-center blue-menu-option p-7">
+       <a id="lnk_ext_AulaVirtual" class="text-muted" href="https://aulavirtual.upc.edu.pe" target="_blank">
+            <img src="http://mi.upc.edu.pe//assets/img/aula_virtual.png" class="block " alt="">
+        </a>
+      </div>
+      <div class="col-sm-2 col-xs-2 text-center blue-menu-option p-7">
+        <a id="lnk_ext_Impresiones" class="text-muted" href="http://intranet.upc.edu.pe/Loginintermedia/loginupc.aspx?wap=669" target="_blank">
+            <img src="http://mi.upc.edu.pe//assets/img/print_new.png" class="block" alt="">
+        </a>
+      </div>
+      <div class="blue-menu-option pull-right col-sm-2 col-sm-offset-3 col-xs-4 col-xs-offset-1 border-white-right p-7 blue-menu-option">
+        <div class="button text-center" type="button" data-toggle="collapse" data-target="#collapseMobile" aria-expanded="false" aria-controls="collapseMobile">
+          <img class="inline-block" src="http://mi.upc.edu.pe/assets/img/bars.png" alt="">
+          <span class="pl-7">MENU</span>
+        </div>  
+      </div>
+    </div>
+  </div>
+</div>
+<div class="collapse hidden-md hidden-lg" id="collapseMobile">
+   <ul class="list-unstyled mobile-menu">
+     <li class="parent"><a id="lnk_int_Inicio" href="http://mi.upc.edu.pe/dashboard/estudiante">Inicio</a></li>
+   
+     <li class="parent">
+           <span>Mis Estudios</span>
+      <ul class="list-unstyled child">
+  
+      <li><a id="lnk_int_Ciclo ActualMovil" href="http://mi.upc.edu.pe/mis-estudios/ciclo-actual">Ciclo Actual</a></li>
+    
+      <li><a id="lnk_int_Mi CarreraMovil" href="http://mi.upc.edu.pe/mis-estudios/mi-carrera">Mi Carrera</a></li>
+    
+      <li><a id="lnk_int_Avance de mi CarreraMovil" href="http://mi.upc.edu.pe/mis-estudios/avance-de-mi-carrera">Avance de mi Carrera</a></li>
+    
+      <li><a id="lnk_int_Notas DetalladasMovil" href="http://mi.upc.edu.pe/mis-estudios/notas-detalladas">Notas Detalladas</a></li>
+    
+      <li><a id="lnk_int_Mis ExámenesMovil" href="http://mi.upc.edu.pe/mis-estudios/mis-examenes">Mis Exámenes</a></li>
+    
+      <li><a id="lnk_int_InglésMovil" href="http://mi.upc.edu.pe/mis-estudios/mi-ingles">Inglés</a></li>
+    
+</ul> 
+
+          </li>
+     
+     <li class="parent">
+           <span>Mis Trámites</span>
+      <ul class="list-unstyled child">
+  
+      <li><a id="lnk_int_Trámites en cursoMovil" href="http://mi.upc.edu.pe/mis-tramites/estado-actual">Trámites en curso</a></li>
+    
+      <li><a id="lnk_int_Trámites de la carreraMovil" href="http://mi.upc.edu.pe/mis-tramites/tramites-de-la-carrera">Trámites de la carrera</a></li>
+    
+      <li><a id="lnk_int_Otros trámitesMovil" href="http://mi.upc.edu.pe/mis-tramites/otros-tramites">Otros trámites</a></li>
+    
+</ul> 
+
+          </li>
+     
+     <li class="parent">
+           <span>Mis Finanzas</span>
+      <ul class="list-unstyled child">
+  
+      <li><a id="lnk_int_Mis PagosMovil" href="http://mi.upc.edu.pe/mis-finanzas/mis-pagos">Mis Pagos</a></li>
+    
+      <li><a id="lnk_int_Información FinancieraMovil" href="http://mi.upc.edu.pe/mis-finanzas/informacion-financiera">Información Financiera</a></li>
+    
+      <li><a id="lnk_int_ComprasMovil" href="http://mi.upc.edu.pe/mis-finanzas/compras">Compras</a></li>
+    
+      <li><a id="lnk_int_Becas y Crédito EducativoMovil" href="http://mi.upc.edu.pe/mis-finanzas/becas-creditos">Becas y Crédito Educativo</a></li>
+    
+</ul> 
+
+          </li>
+     
+     <li class="parent">
+           <span>Mis Reservas</span>
+      <ul class="list-unstyled child">
+  
+      <li><a id="lnk_int_Reserva de CubículosMovil" href="http://mi.upc.edu.pe/mis-reservas/reserva-de-cubiculos">Reserva de Cubículos</a></li>
+    
+      <li><a id="lnk_int_Reserva de ComputadorasMovil" href="http://mi.upc.edu.pe/mis-reservas/reserva-de-computadoras">Reserva de Computadoras</a></li>
+    
+      <li><a id="lnk_int_Reserva Espacio DeportivoMovil" href="http://mi.upc.edu.pe/mis-reservas/reserva-espacios-deportivos">Reserva Espacio Deportivo</a></li>
+    
+      <li><a id="lnk_int_Otras ReservasMovil" href="http://mi.upc.edu.pe/mis-reservas/otras-reservas">Otras Reservas</a></li>
+    
+</ul> 
+
+          </li>
+     
+     <li class="parent">
+           <span>Mis Servicios</span>
+      <ul class="list-unstyled child">
+  
+      <li><a id="lnk_int_ImpresionesMovil" href="http://mi.upc.edu.pe/mis-servicios/impresiones">Impresiones</a></li>
+    
+      <li><a id="lnk_int_Centro de InformaciónMovil" href="http://mi.upc.edu.pe/mis-servicios/centro-de-informacion">Centro de Información</a></li>
+    
+      <li><a id="lnk_int_Reglamentos y ManualesMovil" href="http://mi.upc.edu.pe/mis-servicios/reglamentos-y-manuales">Reglamentos y Manuales</a></li>
+    
+      <li><a id="lnk_int_Otros ServiciosMovil" href="http://mi.upc.edu.pe/mis-servicios/otros-servicios">Otros Servicios</a></li>
+    
+</ul> 
+
+          </li>
+     
+     <li class="parent">
+            <a href="http://mi.upc.edu.pe/mis-noticias" title=""><span>Mis Noticias</span></a>
+          </li>
+         
+     <li class="parent">
+      <span>Mi Perfil</span>
+      <ul class="list-unstyled child">
+        <li><a id="lnk_int_MisDatosMovil" href="http://mi.upc.edu.pe/perfil">Mis Datos</a></li>
+        <li><a data-toggle="modal" data-target="#myModal">Ver tutorial</a></li>
+      </ul>
+     </li>
+     <li class="parent"><a id="lnk_int_AyudaMovil" href="http://mi.upc.edu.pe/ayuda">Ayuda</a></li>
+     <li class="parent"><a id="lnk_int_BuscarMovil" href="http://mi.upc.edu.pe/buscar/buscar_movil">Buscar</a></li>
+     <li><a id="lnk_intCerrarSesionMovil" href="http://mi.upc.edu.pe/login/salir">Cerrar Sesión</a></li> 
+   </ul>
+ </div>
+
+ <div class="site-menu hidden-sm hidden-xs">
+  <ul class="list-unstyled nav-main">
+
+    <li class="mis-estudios menu sidebar-item"> 
+      <a id="lnk_int_Mis Estudios" href="">
+        <div></div>
+        <span>Mis Estudios</span>
+      </a>
+      <ul class="list-unstyled">
+
+        <li><a id="lnk_int_Ciclo Actual" href="http://mi.upc.edu.pe/mis-estudios/ciclo-actual">Ciclo Actual</a></li>
+        
+        <li><a id="lnk_int_Mi Carrera" href="http://mi.upc.edu.pe/mis-estudios/mi-carrera">Mi Carrera</a></li>
+        
+        <li><a id="lnk_int_Avance de mi Carrera" href="http://mi.upc.edu.pe/mis-estudios/avance-de-mi-carrera">Avance de mi Carrera</a></li>
+        
+        <li><a id="lnk_int_Notas Detalladas" href="http://mi.upc.edu.pe/mis-estudios/notas-detalladas">Notas Detalladas</a></li>
+        
+        <li><a id="lnk_int_Mis Exámenes" href="http://mi.upc.edu.pe/mis-estudios/mis-examenes">Mis Exámenes</a></li>
+        
+        <li><a id="lnk_int_Inglés" href="http://mi.upc.edu.pe/mis-estudios/mi-ingles">Inglés</a></li>
+        
+      </ul>
+    </li>
+
+    <li class="mis-tramites menu sidebar-item"> 
+      <a id="lnk_int_Mis Trámites" href="#">
+        <div></div>
+        <span>Mis Trámites</span>
+      </a>
+      <ul class="list-unstyled">
+
+        <li><a id="lnk_int_Trámites en curso" href="http://mi.upc.edu.pe/mis-tramites/estado-actual">Trámites en curso</a></li>
+        
+        <li><a id="lnk_int_Trámites de la carrera" href="http://mi.upc.edu.pe/mis-tramites/tramites-de-la-carrera">Trámites de la carrera</a></li>
+        
+        <li><a id="lnk_int_Otros trámites" href="http://mi.upc.edu.pe/mis-tramites/otros-tramites">Otros trámites</a></li>
+        
+      </ul>
+    </li>
+
+    <li class="mis-finanzas menu sidebar-item"> 
+      <a id="lnk_int_Mis Finanzas" href="#">
+        <div></div>
+        <span>Mis Finanzas</span>
+      </a>
+      <ul class="list-unstyled">
+
+        <li><a id="lnk_int_Mis Pagos" href="http://mi.upc.edu.pe/mis-finanzas/mis-pagos">Mis Pagos</a></li>
+        
+        <li><a id="lnk_int_Información Financiera" href="http://mi.upc.edu.pe/mis-finanzas/informacion-financiera">Información Financiera</a></li>
+        
+        <li><a id="lnk_int_Compras" href="http://mi.upc.edu.pe/mis-finanzas/compras">Compras</a></li>
+        
+        <li><a id="lnk_int_Becas y Crédito Educativo" href="http://mi.upc.edu.pe/mis-finanzas/becas-creditos">Becas y Crédito Educativo</a></li>
+        
+      </ul>
+    </li>
+
+    <li class="mis-reservas menu sidebar-item"> 
+      <a id="lnk_int_Mis Reservas" href="#">
+        <div></div>
+        <span>Mis Reservas</span>
+      </a>
+      <ul class="list-unstyled">
+
+        <li><a id="lnk_int_Reserva de Cubículos" href="http://mi.upc.edu.pe/mis-reservas/reserva-de-cubiculos">Reserva de Cubículos</a></li>
+        
+        <li><a id="lnk_int_Reserva de Computadoras" href="http://mi.upc.edu.pe/mis-reservas/reserva-de-computadoras">Reserva de Computadoras</a></li>
+        
+        <li><a id="lnk_int_Reserva Espacio Deportivo" href="http://mi.upc.edu.pe/mis-reservas/reserva-espacios-deportivos">Reserva Espacio Deportivo</a></li>
+        
+        <li><a id="lnk_int_Otras Reservas" href="http://mi.upc.edu.pe/mis-reservas/otras-reservas">Otras Reservas</a></li>
+        
+      </ul>
+    </li>
+
+    <li class="mis-servicios menu sidebar-item"> 
+      <a id="lnk_int_Mis Servicios" href="http://mi.upc.edu.pe/mis-servicios/otros-servicios">
+        <div></div>
+        <span>Mis Servicios</span>
+      </a>
+      <ul class="list-unstyled">
+
+        <li><a id="lnk_int_Impresiones" href="http://mi.upc.edu.pe/mis-servicios/impresiones">Impresiones</a></li>
+        
+        <li><a id="lnk_int_Centro de Información" href="http://mi.upc.edu.pe/mis-servicios/centro-de-informacion">Centro de Información</a></li>
+        
+        <li><a id="lnk_int_Reglamentos y Manuales" href="http://mi.upc.edu.pe/mis-servicios/reglamentos-y-manuales">Reglamentos y Manuales</a></li>
+        
+        <li><a id="lnk_int_Otros Servicios" href="http://mi.upc.edu.pe/mis-servicios/otros-servicios">Otros Servicios</a></li>
+        
+      </ul>
+    </li>
+
+    <li class="mis-noticias menu sidebar-item"> 
+      <a id="lnk_int_Mis Noticias" href="http://mi.upc.edu.pe/mis-noticias">
+        <div></div>
+        <span>Mis Noticias</span>
+      </a>
+      <ul class="list-unstyled">
+
+      </ul>
+    </li>
+
+
+    <li class="ayuda menu sidebar-item">
+      <a id="lnk_int_Ayuda" href="http://mi.upc.edu.pe/ayuda">
+        <div></div>
+        <span>Ayuda</span>
+      </a>
+    </li>
+
+  </ul>
+</div> 
+          <div class="container">
+          <div class="col-md-1"></div>
+          <div class="col-md-11">
+            <section class="planificacion col-md-10-5 background-white mt-21">
+              <br>
+              <div class="caja">
+                <h2>programación de encuestas especiales</h2>
+              </div>
+                <br>       
+                  <div class="container">
+                    <div class="row">
+                     <div class="col-sm-6 col-xs-12 pb-35">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <b>Tipo de cuestionario</b>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="opciones-filtros-2">
+                              <div class="filter-opciones">
+                                <select class="form-control form-select" col="100">
+                                  <option  class="ordenar"></option>
+                                  <option class="recientes">1</option>
+                                  <option class="visto">2</option>
+                                  <option class="alfa">3</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12 pb-35">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <b>Fecha</b>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="opciones-filtros-2">
+                            <div class="filter-opciones">
+                              <select class="form-control form-select" col="100">
+                                <option  class="ordenar"></option>
+                                <option class="recientes">1</option>
+                                <option class="visto">2</option>
+                                <option class="alfa">3</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    </div>
+                  </div>         
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-6 col-xs-12 pb-35">
+                       <div class="container">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <b>Nombre del curso</b>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="opciones-filtros-2">
+                              <div class="filter-opciones">
+                                <select class="form-control form-select" col="100">
+                                  <option  class="ordenar"></option>
+                                  <option class="recientes">1</option>
+                                  <option class="visto">2</option>
+                                  <option class="alfa">3</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 pb-35">
+                       <div class="container">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <b>Hora de inicio</b>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="opciones-filtros-2">
+                              <div class="filter-opciones">
+                                <select class="form-control form-select" col="100">
+                                  <option  class="ordenar"></option>
+                                  <option class="recientes">1</option>
+                                  <option class="visto">2</option>
+                                  <option class="alfa">3</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>  
+                <div class="container">
+                    <div class="row">
+                      <div class="col-sm-6 col-xs-12 pb-35">
+                       <div class="container">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <b>Nombre de la encuesta</b>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="opciones-filtros-2">
+                              <div class="filter-opciones">
+                                <select class="form-control form-select" col="100">
+                                  <option  class="ordenar"></option>
+                                  <option class="recientes">1</option>
+                                  <option class="visto">2</option>
+                                  <option class="alfa">3</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 pb-35">
+                       <div class="container">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <b>Hora final</b>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="opciones-filtros-2">
+                              <div class="filter-opciones">
+                                <select class="form-control form-select" col="100">
+                                  <option  class="ordenar"></option>
+                                  <option class="recientes">1</option>
+                                  <option class="visto">2</option>
+                                  <option class="alfa">3</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="container">
+                    <div class="row">
+                      <div class="col-sm-6 col-xs-12 pb-35">
+                       <div class="container">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <b>Programa</b>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="opciones-filtros-2">
+                              <div class="filter-opciones">
+                                <select class="form-control form-select" col="100">
+                                  <option  class="ordenar"></option>
+                                  <option class="recientes">1</option>
+                                  <option class="visto">2</option>
+                                  <option class="alfa">3</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="container">
+                  <div class="row">
+                  <div class="pb-35">
+                    <div class="cargar-contenido grey-border">
+                      <label class="control-label">Select File</label>
+                      <input id="input-1" type="file" class="file">
+                      <br>
+                      <div class="boton-subir col-sm-1-5">
+                      <a href="#">
+                        <p>Subir</p>
+                      </a>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </section>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.js"></script>
+
+    <script src="http://mi.upc.edu.pe/js/b3/dropdown.js"></script>
+    <script src="http://mi.upc.edu.pe/js/b3/modal.js"></script>
+    <script src="http://mi.upc.edu.pe/js/b3/collapse.js"></script>
+    <script src="js/responsive-calendar.js"></script>
+    <script src="http://mi.upc.edu.pe/js/app/vendor/jquery.validate.min.js"></script>
+    <script src="http://mi.upc.edu.pe/js/app/src/session_expired.js.php?url='http://mi.upc.edu.pe/'"></script>
+  
+  
+  <script src="http://mi.upc.edu.pe/js/app/src/dashboard.js"></script>
+  
+    
+    <!--[if IE]>
+  <script src="http://mi.upc.edu.pe/js/app/src/ie.js"></script>
+  <![endif]-->
+  <!--[if IE 8]>
+  <script src="http://mi.upc.edu.pe/js/app/src/ie8.js"></script>
+  <![endif]-->
+  <!--[if IE 9]>
+  <script src="http://mi.upc.edu.pe/js/app/src/ie9.js"></script>
+  <![endif]-->
+
+  <script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".responsive-calendar").responsiveCalendar({
+          time: '2016-01',
+          events: {
+            "2016-01-19": {"number": 1, "url": "#"},
+            "2016-01-20": {"number": 1, "url": "#"}, 
+            "2016-01-21":{"number": 1},
+            "2016-01-22":{"number": 1},
+            "2016-01-23":{"number": 1}, 
+            "2016-06-12": {}}
+          });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*////////////////FUENTES///////////*/
+
+@font-face{ 
+	font-family: 'sgothic-bdcap';
+	src: url('http://www.upc.edu.pe/html/fonts/upc_sgothic-bdcap-webfont.eot');
+	src: url('http://www.upc.edu.pe/html/fonts/upc_sgothic-bdcap-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('http://www.upc.edu.pe/html/fonts/upc_sgothic-bdcap-webfont.woff') format('woff'),
+	     url('http://www.upc.edu.pe/html/fonts/upc_sgothic-bdcap-webfont.ttf') format('truetype'),
+	     url('http://www.upc.edu.pe/html/fonts/upc_sgothic-bdcap-webfont.svg#http://www.upc.edu.pe/html/fonts/upc_sgothic-bdcap-webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face{ 
+	font-family: 'sgothic-rgcap';
+	src: url('http://www.upc.edu.pe/html/fonts/upc_sgothic-rgcap-webfont.eot');
+	src: url('http://www.upc.edu.pe/html/fonts/upc_sgothic-rgcap-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('http://www.upc.edu.pe/html/fonts/upc_sgothic-rgcap-webfont.woff') format('woff'),
+	     url('http://www.upc.edu.pe/html/fonts/upc_sgothic-rgcap-webfont.ttf') format('truetype'),
+	     url('http://www.upc.edu.pe/html/fonts/upc_sgothic-rgcap-webfont.svg#http://www.upc.edu.pe/html/fonts/upc_sgothic-rgcap-webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{ 
+	font-family: 'sgothic-stencilcap';
+	src: url('http://www.upc.edu.pe/html/fonts/upc_sgothic-stencilcap-webfont.eot');
+	src: url('http://www.upc.edu.pe/html/fonts/upc_sgothic-stencilcap-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('http://www.upc.edu.pe/html/fonts/upc_sgothic-stencilcap-webfont.woff') format('woff'),
+	     url('http://www.upc.edu.pe/html/fonts/upc_sgothic-stencilcap-webfont.ttf') format('truetype'),
+	     url('http://www.upc.edu.pe/html/fonts/upc_sgothic-stencilcap-webfont.svg#http://www.upc.edu.pe/html/fonts/upc_sgothic-stencilcap-webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'zizou-slab-regular';
+    src: url('http://www.upc.edu.pe/html/fonts/zizou-slab-regular.eot');
+    src: url('http://www.upc.edu.pe/html/fonts/zizou-slab-regular.eot?#iefix') format('embedded-opentype'),
+         url('http://www.upc.edu.pe/html/fonts/zizou-slab-regular.woff') format('woff'),
+         url('http://www.upc.edu.pe/html/fonts/zizou-slab-regular.ttf') format('truetype'),
+         url('http://www.upc.edu.pe/html/fonts/zizou-slab-regular.svg#http://www.upc.edu.pe/html/fonts/zizou-slab-regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'zizou-slab-bold';
+    src: url('http://www.upc.edu.pe/html/fonts/zizou-slab-bold.eot');
+    src: url('http://www.upc.edu.pe/html/fonts/zizou-slab-bold.eot?#iefix') format('embedded-opentype'),
+         url('http://www.upc.edu.pe/html/fonts/zizou-slab-bold.woff') format('woff'),
+         url('http://www.upc.edu.pe/html/fonts/zizou-slab-bold.ttf') format('truetype'),
+         url('http://www.upc.edu.pe/html/fonts/zizou-slab-bold.svg#http://www.upc.edu.pe/html/fonts/zizou-slab-bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
