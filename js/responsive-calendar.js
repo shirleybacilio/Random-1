@@ -385,7 +385,9 @@
 // área de botones 
 
 
-$(document).onClick(function() {
+
+$(document).ready(function() {
+  $('.user-name').on('click', function() {
   var click= $(this).click();
   console.log(click);
 
@@ -397,3 +399,4 @@ $(document).onClick(function() {
   
   }
  });
+});
